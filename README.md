@@ -15,7 +15,9 @@ python3.5+
 ## 安装依赖
 ```shell
 
-pip3 install pillow PyQt5
+pip3 install pillow
+
+pip3 install PyQt5
 
 ```
 
