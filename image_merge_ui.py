@@ -2,30 +2,31 @@
 
 # Form implementation generated from reading ui file 'image_merge.ui'
 #
-# Created by: PyQt5 UI code generator 5.10.1
+# Created by: PyQt5 UI code generator 5.14.1
 #
 # WARNING! All changes made in this file will be lost!
 
+
 from PyQt5 import QtCore, QtGui, QtWidgets
+
 
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
         Form.setWindowModality(QtCore.Qt.ApplicationModal)
         Form.setEnabled(True)
-        Form.resize(532, 474)
-#        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
-#        sizePolicy.setHorizontalStretch(0)
-#        sizePolicy.setVerticalStretch(0)
-#        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
-#        Form.setSizePolicy(sizePolicy)
-        Form.setFixedSize(Form.width(), Form.height())
+        Form.resize(532, 440)
+        sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Fixed, QtWidgets.QSizePolicy.Fixed)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(Form.sizePolicy().hasHeightForWidth())
+        Form.setSizePolicy(sizePolicy)
         font = QtGui.QFont()
         font.setFamily("Noto Sans CJK SC Regular")
         font.setPointSize(10)
         Form.setFont(font)
         self.gridLayoutWidget = QtWidgets.QWidget(Form)
-        self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 180, 34))
+        self.gridLayoutWidget.setGeometry(QtCore.QRect(20, 10, 180, 36))
         self.gridLayoutWidget.setObjectName("gridLayoutWidget")
         self.gridLayout = QtWidgets.QGridLayout(self.gridLayoutWidget)
         self.gridLayout.setContentsMargins(0, 0, 0, 0)
@@ -82,35 +83,8 @@ class Ui_Form(object):
         self.upButton.setIcon(icon5)
         self.upButton.setObjectName("upButton")
         self.gridLayout.addWidget(self.upButton, 0, 3, 1, 1)
-        self.gridLayoutWidget_3 = QtWidgets.QWidget(Form)
-        self.gridLayoutWidget_3.setGeometry(QtCore.QRect(20, 350, 490, 34))
-        self.gridLayoutWidget_3.setObjectName("gridLayoutWidget_3")
-        self.gridLayout_3 = QtWidgets.QGridLayout(self.gridLayoutWidget_3)
-        self.gridLayout_3.setContentsMargins(0, 0, 0, 0)
-        self.gridLayout_3.setObjectName("gridLayout_3")
-        self.auto_size = QtWidgets.QCheckBox(self.gridLayoutWidget_3)
-        self.auto_size.setObjectName("auto_size")
-        self.gridLayout_3.addWidget(self.auto_size, 0, 9, 1, 1)
-        self.image_row_size_Edit = QtWidgets.QLineEdit(self.gridLayoutWidget_3)
-        self.image_row_size_Edit.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.image_row_size_Edit.setObjectName("image_row_size_Edit")
-        self.gridLayout_3.addWidget(self.image_row_size_Edit, 0, 7, 1, 1)
-        self.image_column_size_label = QtWidgets.QLabel(self.gridLayoutWidget_3)
-        self.image_column_size_label.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.image_column_size_label.setObjectName("image_column_size_label")
-        self.gridLayout_3.addWidget(self.image_column_size_label, 0, 0, 1, 1, QtCore.Qt.AlignLeft)
-        self.image_row_size_label = QtWidgets.QLabel(self.gridLayoutWidget_3)
-        self.image_row_size_label.setObjectName("image_row_size_label")
-        self.gridLayout_3.addWidget(self.image_row_size_label, 0, 3, 1, 1, QtCore.Qt.AlignHCenter)
-        self.label = QtWidgets.QLabel(self.gridLayoutWidget_3)
-        self.label.setObjectName("label")
-        self.gridLayout_3.addWidget(self.label, 0, 8, 1, 1, QtCore.Qt.AlignLeft)
-        self.image_column_size_Edit = QtWidgets.QLineEdit(self.gridLayoutWidget_3)
-        self.image_column_size_Edit.setMaximumSize(QtCore.QSize(100, 16777215))
-        self.image_column_size_Edit.setObjectName("image_column_size_Edit")
-        self.gridLayout_3.addWidget(self.image_column_size_Edit, 0, 2, 1, 1)
         self.gridLayoutWidget_4 = QtWidgets.QWidget(Form)
-        self.gridLayoutWidget_4.setGeometry(QtCore.QRect(20, 390, 490, 34))
+        self.gridLayoutWidget_4.setGeometry(QtCore.QRect(20, 350, 490, 30))
         self.gridLayoutWidget_4.setObjectName("gridLayoutWidget_4")
         self.gridLayout_4 = QtWidgets.QGridLayout(self.gridLayoutWidget_4)
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
@@ -125,7 +99,7 @@ class Ui_Form(object):
         self.merge_row_radio.setObjectName("merge_row_radio")
         self.gridLayout_4.addWidget(self.merge_row_radio, 0, 2, 1, 1)
         self.gridLayoutWidget_5 = QtWidgets.QWidget(Form)
-        self.gridLayoutWidget_5.setGeometry(QtCore.QRect(20, 430, 490, 34))
+        self.gridLayoutWidget_5.setGeometry(QtCore.QRect(20, 390, 490, 36))
         self.gridLayoutWidget_5.setObjectName("gridLayoutWidget_5")
         self.gridLayout_5 = QtWidgets.QGridLayout(self.gridLayoutWidget_5)
         self.gridLayout_5.setContentsMargins(0, 0, 0, 0)
@@ -156,7 +130,7 @@ class Ui_Form(object):
         self.scrollAreaWidgetContents.setObjectName("scrollAreaWidgetContents")
         self.listWidget = QtWidgets.QListWidget(self.scrollAreaWidgetContents)
         self.listWidget.setGeometry(QtCore.QRect(-5, 0, 500, 280))
-        self.listWidget.setSelectionMode(QtWidgets.QAbstractItemView.SingleSelection)
+        self.listWidget.setSelectionMode(QtWidgets.QAbstractItemView.ExtendedSelection)
         self.listWidget.setObjectName("listWidget")
         self.scrollArea.setWidget(self.scrollAreaWidgetContents)
 
@@ -165,18 +139,14 @@ class Ui_Form(object):
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
-        Form.setWindowTitle(_translate("Form", "图片拼接"))
+        Form.setWindowTitle(_translate("Form", "图片拼接 v1.4 beta1"))
         self.removeImageButton.setText(_translate("Form", "..."))
         self.downButton.setText(_translate("Form", "..."))
         self.startButton.setText(_translate("Form", "..."))
         self.resetButton.setText(_translate("Form", "..."))
         self.upButton.setText(_translate("Form", "..."))
-        self.image_column_size_label.setText(_translate("Form", "原图尺寸"))
-        self.image_row_size_label.setText(_translate("Form", "x"))
-        self.label.setText(_translate("Form", "px"))
         self.merge_type_label.setText(_translate("Form", "拼接方式"))
         self.merge_column_radio.setText(_translate("Form", "横向"))
         self.merge_row_radio.setText(_translate("Form", "纵向"))
         self.image_save_path_label.setText(_translate("Form", "保存路径"))
         self.image_save_choose.setText(_translate("Form", "选择"))
-        self.auto_size.setText(_translate("Form", "自动获取"))

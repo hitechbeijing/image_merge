@@ -13,7 +13,7 @@
     <x>0</x>
     <y>0</y>
     <width>532</width>
-    <height>474</height>
+    <height>440</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -154,77 +154,11 @@
     </item>
    </layout>
   </widget>
-  <widget class="QWidget" name="gridLayoutWidget_3">
-   <property name="geometry">
-    <rect>
-     <x>20</x>
-     <y>350</y>
-     <width>491</width>
-     <height>33</height>
-    </rect>
-   </property>
-   <layout class="QGridLayout" name="gridLayout_3">
-    <item row="0" column="9">
-     <widget class="QCheckBox" name="auto_size">
-      <property name="text">
-       <string>自动获取</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="0" alignment="Qt::AlignLeft">
-     <widget class="QLabel" name="image_column_size_label">
-      <property name="maximumSize">
-       <size>
-        <width>104</width>
-        <height>16777215</height>
-       </size>
-      </property>
-      <property name="text">
-       <string>原图尺寸</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="3" alignment="Qt::AlignHCenter">
-     <widget class="QLabel" name="image_row_size_label">
-      <property name="text">
-       <string>x</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLineEdit" name="image_column_size_Edit">
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>16777215</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="8" alignment="Qt::AlignLeft">
-     <widget class="QLabel" name="label">
-      <property name="text">
-       <string>px</string>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="7">
-     <widget class="QLineEdit" name="image_row_size_Edit">
-      <property name="maximumSize">
-       <size>
-        <width>100</width>
-        <height>16777215</height>
-       </size>
-      </property>
-     </widget>
-    </item>
-   </layout>
-  </widget>
   <widget class="QWidget" name="gridLayoutWidget_4">
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>390</y>
+     <y>350</y>
      <width>491</width>
      <height>31</height>
     </rect>
@@ -257,7 +191,7 @@
    <property name="geometry">
     <rect>
      <x>20</x>
-     <y>430</y>
+     <y>390</y>
      <width>491</width>
      <height>36</height>
     </rect>
